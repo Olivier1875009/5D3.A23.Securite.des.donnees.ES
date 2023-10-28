@@ -1,4 +1,19 @@
 -- Script #3
+-- region Drop the user's (if exists)
+DROP USER IF EXISTS "james_bond@gmail.com" CASCADE;
+DROP USER IF EXISTS "bob_gratton@gmail.com" CASCADE;
+-- endregion Drop the user's (if exists)
+
+-- region Create the user's
+CREATE USER "james_bond@gmail.com" IDENTIFIED BY "r}9iUg)*YA}5K:Q";
+CREATE USER "bob_gratton@gmail.com" IDENTIFIED BY "ZPfrdZ3cE)]aEjh";
+-- endregion Create the user's
+
+-- region Add the possibility to connect to user's
+GRANT CONNECT TO "james_bond@gmail.com";
+GRANT CONNECT TO "bob_gratton@gmail.com";
+-- endregion Add the possibility to connect to user's
+
 -- region Drop tables
 DROP TABLE IF EXISTS utilisateurs;
 DROP TABLE IF EXISTS livres;
@@ -80,12 +95,15 @@ INSERT INTO auteurs(nom, prenom) VALUES ('Hugo', 'Victor');
 INSERT INTO auteurs(pseudonyme, nom, prenom) VALUES ('J.R.R.', 'Reuel Tolkien', 'John Ronald');
 INSERT INTO auteurs(pseudonyme, nom, prenom) VALUES ('Hergé', 'Prosper Remi', 'Georges');
 
-INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Simpson', 'Homer', 'homer_simpson@gmail.com', 2, 2, 'nsBWo5k38d8m');
-INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Bond', 'James', 'james_bond@gmail.com', 3, 2, '1NNTd5IeD2qt');
-INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Gratton', 'Bob', 'bob_gratton@gmail.com', 5, 1, 'Lr41cmSqo6xO');
+INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Simpson', 'Homer', 'homer_simpson@gmail.com', 2, 2, 'ui1}Xa7tdmY9*!+');
+INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Bond', 'James', 'james_bond@gmail.com', 3, 2, 'r}9iUg)*YA}5K:Q');
+INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Gratton', 'Bob', 'bob_gratton@gmail.com', 5, 1, 'ZPfrdZ3cE)]aEjh');
 
 INSERT INTO livres(titre, description, cover, paysOrigine, langueOrigine, auteur) VALUES ('Tintin: Vol 714 pour Sydney', 'Dans cette nouvelle aventure, nous retrouvons Tintin, Haddock et Tournesol ...', 'https://images.renaud-bray.com/images/PG/17/17912-gf.jpg', 1, 1, 4);
 INSERT INTO livres(titre, description, cover, paysOrigine, langueOrigine, auteur) VALUES ('Harry Potter à lécole des sorciers', 'Le jour de ses onze ans, Harry Potter, ...', 'https://images.renaud-bray.com/images/PG/2345/2345638-gf.jpg', 3, 2, 1);
 INSERT INTO livres(titre, description, cover, paysOrigine, langueOrigine, auteur) VALUES ('Le seigneur des anneaux : La Fraternitité de lanneau', 'Dans les vertes prairies de la Comté, ...', 'https://images.renaud-bray.com/images/PG/2595/2595041-gf.jpg', 3, 2, 3);
 INSERT INTO livres(titre, description, cover, paysOrigine, langueOrigine, auteur) VALUES ('Les misérables', 'Sous la monarchie de Juillet, ...', 'https://images.renaud-bray.com/images/PG/1361/1361070-gf.jpg', 1, 1, 2);
 -- endregion Insert data
+
+-- Save the changes
+COMMIT WORK;

@@ -3,4 +3,4 @@
 ALTER DATABASE OPEN;
 
 -- Give privileges to the user
-GRANT ALL PRIVILEGES TO homer_simpson;
+GRANT CONNECT, RESOURCE, DBA TO "homer_simpson@gmail.com";
