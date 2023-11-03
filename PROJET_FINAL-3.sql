@@ -1,19 +1,4 @@
 -- Script #3
--- region Drop the user's (if exists)
-DROP USER IF EXISTS "james_bond@gmail.com" CASCADE;
-DROP USER IF EXISTS "bob_gratton@gmail.com" CASCADE;
--- endregion Drop the user's (if exists)
-
--- region Create the user's
-CREATE USER "james_bond@gmail.com" IDENTIFIED BY "r}9iUg)*YA}5K:Q";
-CREATE USER "bob_gratton@gmail.com" IDENTIFIED BY "ZPfrdZ3cE)]aEjh";
--- endregion Create the user's
-
--- region Add the possibility to connect to user's
-GRANT CONNECT TO "james_bond@gmail.com";
-GRANT CONNECT TO "bob_gratton@gmail.com";
--- endregion Add the possibility to connect to user's
-
 -- region Drop tables
 DROP TABLE IF EXISTS utilisateurs;
 DROP TABLE IF EXISTS livres;
