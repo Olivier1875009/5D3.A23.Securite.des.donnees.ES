@@ -1,5 +1,3 @@
-
-
 -- region Pluggable database
 -- Disconnect the pluggable database
 ALTER PLUGGABLE DATABASE PROJET4205D3 CLOSE IMMEDIATE;

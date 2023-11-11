@@ -80,9 +80,9 @@ INSERT INTO auteurs(nom, prenom) VALUES ('Hugo', 'Victor');
 INSERT INTO auteurs(pseudonyme, nom, prenom) VALUES ('J.R.R.', 'Reuel Tolkien', 'John Ronald');
 INSERT INTO auteurs(pseudonyme, nom, prenom) VALUES ('Hergé', 'Prosper Remi', 'Georges');
 
-INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Simpson', 'Homer', 'homer_simpson@gmail.com', 2, 2, 'ui1}Xa7tdmY9*!+');
-INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Bond', 'James', 'james_bond@gmail.com', 3, 2, 'r}9iUg)*YA}5K:Q');
-INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Gratton', 'Bob', 'bob_gratton@gmail.com', 5, 1, 'ZPfrdZ3cE)]aEjh');
+INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Simpson', 'Homer', 'homer_simpson@gmail.com', 2, 2, 'dnu9QAC3');
+INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Bond', 'James', 'james_bond@gmail.com', 3, 2, 'ngr4M0Lz');
+INSERT INTO utilisateurs(nom, prenom, email, codePays, codeLangue, motDePasseClair) VALUES ('Gratton', 'Bob', 'bob_gratton@gmail.com', 5, 1, 'ty9rA715');
 
 INSERT INTO livres(titre, description, cover, paysOrigine, langueOrigine, auteur) VALUES ('Tintin: Vol 714 pour Sydney', 'Dans cette nouvelle aventure, nous retrouvons Tintin, Haddock et Tournesol ...', 'https://images.renaud-bray.com/images/PG/17/17912-gf.jpg', 1, 1, 4);
 INSERT INTO livres(titre, description, cover, paysOrigine, langueOrigine, auteur) VALUES ('Harry Potter à lécole des sorciers', 'Le jour de ses onze ans, Harry Potter, ...', 'https://images.renaud-bray.com/images/PG/2345/2345638-gf.jpg', 3, 2, 1);
